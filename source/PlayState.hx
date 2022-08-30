@@ -202,11 +202,11 @@ class PlayState extends FlxState
 
 	function getPoint(diff:Float):Float
 	{
-		if (diff < 25)
+		if (diff < 45)
 			return 1;
-		else if (diff < 45)
-			return 0.75;
 		else if (diff < 90)
+			return 0.75;
+		else if (diff < 130)
 			return 0.5;
 		return 0;
 	}
